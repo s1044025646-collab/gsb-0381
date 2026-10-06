@@ -1,0 +1,22 @@
+{
+  "name": "egyptian-fraction-backend",
+  "version": "1.0.0",
+  "description": "埃及单位分数贪心分解与余数核验后端 (TypeScript + Node.js + SQLite)",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --no-warnings dist/src/server.js",
+    "dev": "tsx --no-warnings src/server.ts",
+    "test": "tsx --no-warnings --test tests/**/*.test.ts",
+    "demo": "tsx --no-warnings scripts/demo.ts",
+    "cli": "tsx --no-warnings src/cli.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
