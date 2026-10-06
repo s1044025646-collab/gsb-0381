@@ -1,0 +1,30 @@
+{
+  "name": "egyptian-fraction-backend",
+  "version": "1.0.0",
+  "description": "Windows 本地埃及单位分数贪心分解与余数核验后端",
+  "type": "module",
+  "main": "dist/server.js",
+  "bin": {
+    "egyptian": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --import tsx --test test/*.test.ts",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "demo": "powershell -ExecutionPolicy Bypass -File scripts/demo.ps1",
+    "cli": "tsx src/cli.ts"
+  },
+  "keywords": [
+    "egyptian-fraction",
+    "bigint",
+    "sqlite",
+    "typescript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
